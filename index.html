@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <meta name="author" content="Chelsie Ty">
+    <meta name="description" content="Admin Dashboard Grid Project">
+
+    <title>Admin Dashboard</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page-container">
+      <header class="header">
+        <div class="header__search">
+          <label for="search-field">
+            <span class="material-symbols-rounded"> search </span>
+          </label>
+          <input type="search" name="q" id="search-field" />
+        </div>
+        <div class="header__profile">
+          <span class="material-symbols-rounded header__icon"> notifications </span>
+          <img class="header__img--small" src="images/avatar-milo.png" alt="Small profile picture of a cat" />
+          <p class="header__name">Milo Cat</p>
+        </div>
+        <div class="header__display">
+          <img class="header__img--large" src="images/avatar-milo.png" alt="Large profile picture of a cat" />
+          <p class="header__greeting">Hi there,</p>
+          <p class="header__name--large">
+            Milo Cat
+            <span class="header__username">(@purrfectpaws)</span>
+          </p>
+        </div>
+        <div class="header__actions">
+          <button class="button">
+            <span class="material-symbols-rounded button__icon"> add_box </span>
+            New
+          </button>
+          <button class="button">
+            <span class="material-symbols-rounded button__icon"> upload </span>
+            Upload
+          </button>
+          <button class="button">
+            <span class="material-symbols-rounded button__icon"> share </span>
+            Share
+          </button>
+        </div>
+      </header>
+
+      <aside class="sidebar">
+        <h1 class="sidebar__title">
+          <span class="material-symbols-rounded sidebar__logo"> dashboard </span>
+          Dashboard
+        </h1>
+
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="material-symbols-rounded nav__icon"> home </span>
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="material-symbols-rounded nav__icon"> person </span>
+                Profile
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="material-symbols-rounded nav__icon"> chat_bubble </span>
+                Messages
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="material-symbols-rounded nav__icon"> history </span>
+                History
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="material-symbols-rounded nav__icon"> list_alt </span>
+                Tasks
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="material-symbols-rounded nav__icon"> groups </span>
+                Communities
+              </a>
+            </li>
+          </ul>
+
+          <ul class="nav__settings">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="material-symbols-rounded nav__icon"> settings </span>
+                Settings
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="material-symbols-rounded nav__icon"> help </span>
+                Support
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span class="material-symbols-rounded nav__icon"> verified_user </span>
+                Privacy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <div class="projects">
+          <h3 class="projects__label">Your Projects</h3>
+          <div class="projects__cards-group">
+            <div class="projects__card">
+              <h4 class="projects__card-title">Super Cool Project</h4>
+              <p class="projects__card-desc">
+                Cat ipsum dolor sit amet, meow in empty rooms so meow and walk
+                away and knock dish off table head butt cant eat out of my own
+                dish. Chase ball of string good morning sunshine grass smells
+                good.
+              </p>
+              <div class="projects__card-actions">
+                <span class="material-symbols-rounded projects__icon">
+                  star
+                </span>
+                <span class="material-symbols-rounded projects__icon">
+                  visibility
+                </span>
+                <span class="material-symbols-rounded projects__icon">
+                  account_tree
+                </span>
+              </div>
+            </div>
+            
+            <div class="projects__card">
+              <h4 class="projects__card-title">Less Cool Project</h4>
+              <p class="projects__card-desc">
+                Deploy to production. Core competencies rehydrate the team quick
+                win, and my supervisor didn't like the latest revision you gave
+                me can you switch back to the first revision? Slipstream work
+                don't over think it, for draft policy proposal organic growth.
+                Hire the best.
+              </p>
+              <div class="projects__card-actions">
+                <span class="material-symbols-rounded projects__icon">
+                  star
+                </span>
+                <span class="material-symbols-rounded projects__icon">
+                  visibility
+                </span>
+                <span class="material-symbols-rounded projects__icon">
+                  account_tree
+                </span>
+              </div>
+            </div>
+
+            <div class="projects__card">
+              <h4 class="projects__card-title">Impossible App</h4>
+              <p class="projects__card-desc">
+                I feel like I'm running out of ways to explain this to you but
+                once more, I shall try. This fly is a major problem for us. It
+                will ruin our batch. And we need to destroy it and every trace
+                of it, so we can cook. Failing that, we're dead. There's no more
+                room for error. Not with these people.
+              </p>
+              <div class="projects__card-actions">
+                <span class="material-symbols-rounded projects__icon">
+                  star
+                </span>
+                <span class="material-symbols-rounded projects__icon">
+                  visibility
+                </span>
+                <span class="material-symbols-rounded projects__icon">
+                  account_tree
+                </span>
+              </div>
+            </div>
+
+            <div class="projects__card">
+              <h4 class="projects__card-title">Easy Peasy App</h4>
+              <p class="projects__card-desc">
+                Protein, iron, and calcium are some of the nutritional benefits
+                associated with cheeseburgers. Salad is essentially food for
+                rabbits, so don't bother wasting your time.
+              </p>
+              <div class="projects__card-actions">
+                <span class="material-symbols-rounded projects__icon">
+                  star
+                </span>
+                <span class="material-symbols-rounded projects__icon">
+                  visibility
+                </span>
+                <span class="material-symbols-rounded projects__icon">
+                  account_tree
+                </span>
+              </div>
+            </div>
+
+            <div class="projects__card">
+              <h4 class="projects__card-title">Ad Blocker</h4>
+              <p class="projects__card-desc">
+                I love cheese, especially say cheese paneer. Macaroni cheese
+                cheddar squirty cheese jarlsberg who moved my cheese blue
+                castello cheddar cheese on toast. Cheese slices rubber cheese
+                cheddar airedale boursin cheese triangles brie cheeseburger.
+              </p>
+              <div class="projects__card-actions">
+                <span class="material-symbols-rounded projects__icon">
+                  star
+                </span>
+                <span class="material-symbols-rounded projects__icon">
+                  visibility
+                </span>
+                <span class="material-symbols-rounded projects__icon">
+                  account_tree
+                </span>
+              </div>
+            </div>
+
+            <div class="projects__card">
+              <h4 class="projects__card-title">Money Maker</h4>
+              <p class="projects__card-desc">
+                Once upon a time, we need a shepherd to come to the rescue.
+                Little did they know but the robber had visited the aunt first.
+              </p>
+              <div class="projects__card-actions">
+                <span class="material-symbols-rounded projects__icon">
+                  star
+                </span>
+                <span class="material-symbols-rounded projects__icon">
+                  visibility
+                </span>
+                <span class="material-symbols-rounded projects__icon">
+                  account_tree
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="annoucements">
+          <h3 class="announcements__label">Announcements</h3>
+
+          <div class="announcement__cards-group">
+            <div class="announcements__card">
+              <h4 class="announcement__card-title">Site Maintenance</h4>
+              <p class="announcement__card-desc">
+                Has closed eyes but still sees you find empty spot in cupboard
+                and sleep all day. Then cats take over the world. Run at 3am
+                only use one corner of the litter box
+              </p>
+            </div>
+
+            <div class="announcements__card">
+              <h4 class="announcement__card-title">Community Share Day</h4>
+              <p class="announcement__card-desc">
+                Meow for food, then when human fills food dish, take a few bites
+                of food and continue meowing. Pretend not to be evil have secret
+                plans so mark territory sun bathe, yet lick master's hand at
+                first then bite because im moody but leave hair on owner's
+                clothes.
+              </p>
+            </div>
+
+            <div class="announcements__card">
+              <h4 class="announcement__card-title">Updated Privacy Policy</h4>
+              <p class="announcement__card-desc">
+                Ask to be pet then attack owners hand climb leg, and curl into a
+                furry donut yet i can haz licks paws so i love cuddles so your
+                pillow is now my pet bed. Please stop looking at your phone and
+                pet me loved it, hated it, loved it, hated it walk on keyboard
+                cattt catt cattty cat being a cat or sniff catnip and act crazy
+                and mewl for food at 4am but waffles. Toy mouse squeak roll over
+                groom forever, stretch tongue and leave it slightly out, blep, i
+                like fish
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="trending">
+          <h3 class="trending__label">Trending</h3>
+          <div class="trending__cards-group">
+            <div class="trending__card">
+              <img class="trending__card-img--small" src="images/avatar-cali.png" alt="Small profile picture of a ferret"/>
+              <div class="trending__card-account">
+                <p class="trending__card-username">@cali</p>
+                <p class="trending__card-text">World Peace Builder</p>
+              </div>
+            </div>
+
+            <div class="trending__card">
+              <img class="trending__card-img--small" src="images/avatar-koyabear.png" alt="Small profile picture of a koala"/>
+              <div class="trending__card-account">
+                <p class="trending__card-username">@koyabear</p>
+                <p class="trending__card-text">Super Cool Sticker</p>
+              </div>
+            </div>
+
+
+            <div class="trending__card">
+              <img class="trending__card-img--small" src="images/avatar-nala.png" alt="Small profile picture of a tiger"/>
+              <div class="trending__card-account">
+                <p class="trending__card-username">@nala</p>
+                <p class="trending__card-text">Life Changing App</p>
+              </div>
+            </div>
+
+            <div class="trending__card">
+              <img class="trending__card-img--small" src="images/avatar-chimmy.png" alt="Small profile picture of a chick"/>
+              <div class="trending__card-account">
+                <p class="trending__card-username">@chimmy</p>
+                <p class="trending__card-text">No Traffic Maker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
