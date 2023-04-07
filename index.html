@@ -22,39 +22,52 @@
   <body>
     <div class="page-container">
       <header class="header">
-        <div class="header__search">
-          <label for="search-field">
-            <span class="material-symbols-rounded"> search </span>
-          </label>
-          <input type="search" name="q" id="search-field" />
+
+        <div class="header__group-search">
+          <div class="header__search">
+            <label for="search-field">
+              <span class="material-symbols-rounded header__icon"> search </span>
+            </label>
+            <input type="search" name="q" id="search-field" class="header__search-bar" placeholder="Search" />
+          </div>
+          <div class="header__profile">
+            <span class="material-symbols-rounded header__icon"> notifications </span>
+            <img class="header__img--small" src="images/avatar-milo.png" alt="Small profile picture of a cat" />
+            <p class="header__name">Milo Cat</p>
+          </div>
         </div>
-        <div class="header__profile">
-          <span class="material-symbols-rounded header__icon"> notifications </span>
-          <img class="header__img--small" src="images/avatar-milo.png" alt="Small profile picture of a cat" />
-          <p class="header__name">Milo Cat</p>
+
+
+
+        <div class="header__group-display">
+          <div class="header__display">
+            <img class="header__img--large" src="images/avatar-milo.png" alt="Large profile picture of a cat" />
+            <div class="header__greeting-user-group">
+              <p class="header__greeting">Hi there,</p>
+              <p class="header__name--large">
+                Milo Cat
+                <span class="header__username">(@purrfectpaws)</span>
+              </p>
+            </div>
+          </div>
+          <div class="header__actions">
+            <button class="button">
+              <span class="material-symbols-rounded button__icon"> add_box </span>
+              New
+            </button>
+            <button class="button">
+              <span class="material-symbols-rounded button__icon"> upload </span>
+              Upload
+            </button>
+            <button class="button">
+              <span class="material-symbols-rounded button__icon"> share </span>
+              Share
+            </button>
+          </div>
         </div>
-        <div class="header__display">
-          <img class="header__img--large" src="images/avatar-milo.png" alt="Large profile picture of a cat" />
-          <p class="header__greeting">Hi there,</p>
-          <p class="header__name--large">
-            Milo Cat
-            <span class="header__username">(@purrfectpaws)</span>
-          </p>
-        </div>
-        <div class="header__actions">
-          <button class="button">
-            <span class="material-symbols-rounded button__icon"> add_box </span>
-            New
-          </button>
-          <button class="button">
-            <span class="material-symbols-rounded button__icon"> upload </span>
-            Upload
-          </button>
-          <button class="button">
-            <span class="material-symbols-rounded button__icon"> share </span>
-            Share
-          </button>
-        </div>
+
+
+
       </header>
 
       <aside class="sidebar">
@@ -257,13 +270,13 @@
           </div>
         </div>
 
-        <div class="annoucements">
+        <div class="announcements">
           <h3 class="announcements__label">Announcements</h3>
 
-          <div class="announcement__cards-group">
+          <div class="announcements__cards-group">
             <div class="announcements__card">
-              <h4 class="announcement__card-title">Site Maintenance</h4>
-              <p class="announcement__card-desc">
+              <h4 class="announcements__card-title">Site Maintenance</h4>
+              <p class="announcements__card-desc">
                 Has closed eyes but still sees you find empty spot in cupboard
                 and sleep all day. Then cats take over the world. Run at 3am
                 only use one corner of the litter box
@@ -271,19 +284,21 @@
             </div>
 
             <div class="announcements__card">
-              <h4 class="announcement__card-title">Community Share Day</h4>
-              <p class="announcement__card-desc">
+              <div class="announcements__line-divider"></div>
+              <h4 class="announcements__card-title">Community Share Day</h4>
+              <p class="announcements__card-desc">
                 Meow for food, then when human fills food dish, take a few bites
                 of food and continue meowing. Pretend not to be evil have secret
                 plans so mark territory sun bathe, yet lick master's hand at
                 first then bite because im moody but leave hair on owner's
                 clothes.
               </p>
+              <div class="announcements__line-divider"></div>
             </div>
 
             <div class="announcements__card">
-              <h4 class="announcement__card-title">Updated Privacy Policy</h4>
-              <p class="announcement__card-desc">
+              <h4 class="announcements__card-title">Updated Privacy Policy</h4>
+              <p class="announcements__card-desc">
                 Ask to be pet then attack owners hand climb leg, and curl into a
                 furry donut yet i can haz licks paws so i love cuddles so your
                 pillow is now my pet bed. Please stop looking at your phone and
