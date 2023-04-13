@@ -115,12 +115,12 @@ html {
 /* || HEADER */ /*header block*/
 
 .header {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   grid-column: 2 / 4;
 }
 
 .header__group-search {
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
   display: flex;
   align-items: center;
   margin: 10px 50px;
@@ -128,7 +128,7 @@ html {
 }
 
 .header__search {
-  background-color: palevioletred;
+  /* background-color: palevioletred; */
   padding: 10px;
   display: flex;
   align-items: center;
@@ -155,7 +155,7 @@ html {
 }
 
 .header__profile {
-  background-color: lavenderblush;
+  /* background-color: lavenderblush; */
 
   margin-left: min(15%, 200px);
   display: flex;
@@ -174,14 +174,14 @@ html {
 }
 
 .header__group-display {
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
   display: flex;
   align-items: center;
   margin: 10px 50px;
 }
 
 .header__display {
-  background-color: powderblue;
+  /* background-color: powderblue; */
   display: flex;
   gap: 20px;
   align-items: center;
@@ -193,7 +193,7 @@ html {
 }
 
 .header__greeting-user-group {
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   display: flex;
   flex-direction: column;
 }
@@ -208,7 +208,7 @@ html {
 }
 
 .header__actions {
-  background-color: bisque;
+  /* background-color: bisque; */
   margin-left: auto;
 
   display: flex;
@@ -247,7 +247,7 @@ html {
 }
 
 .sidebar__title {
-  background-color: midnightblue;
+  /* background-color: midnightblue; */
 
   font-size: var(--FS-LOGO-NAME-LG);
   color: var(--FONT-COLOR-LIGHT);
@@ -309,7 +309,7 @@ html {
 /* || MAIN */
 
 .main {
-  background-color: lightblue;
+  /* background-color: lightblue; */
 
   grid-column: 2 / 4;
   display: grid;
@@ -321,12 +321,12 @@ html {
 /* - PROJECTS */
 
 .projects {
-  background-color: plum;
+  /* background-color: plum; */
   grid-row: 1 /4;
 }
 
 .projects__cards-group {
-  background-color: khaki;
+  /* background-color: khaki; */
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -374,7 +374,7 @@ html {
 /* - ANNOUNCEMENTS */
 
 .announcements {
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
 
   display: flex;
   flex-direction: column;
@@ -382,7 +382,8 @@ html {
 }
 
 .announcements__cards-group {
-  background-color: papayawhip;
+  /* background-color: papayawhip; */
+
   border: 0.5px solid var(--LINE-DIVIDER-COLOR);
   border-radius: 0.5rem;
   padding: 1.5rem;
@@ -422,20 +423,22 @@ html {
 /* - TRENDING */
 
 .trending {
-  background-color: olivedrab;
+  /* background-color: olivedrab; */
 
   display: grid;
   grid-template-columns: 1fr;
 }
 
 .trending__cards-group {
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
+
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
 
 .trending__card {
-  background-color: honeydew;
+  /* background-color: honeydew; */
+
   display: flex;
   align-items: center;
   gap: 20px;
