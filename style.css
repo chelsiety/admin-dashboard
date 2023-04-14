@@ -28,33 +28,24 @@ button {
   --FS-HEADER-NAME-LG: clamp(1.5rem, 2.7vh, 2rem);
 
   /* COLORS */
-
   --MAIN-BGCOLOR: #7a77b9;
-  --BODY-BGCOLOR: #F0F8FF;
+  --BODY-BGCOLOR: #f6f6f6;
   --ACCENT-COLOR: #ea7186;
-
-  --CARD-BGCOLOR: #ffffff;
-
-  --FONT-COLOR-DARK: #000000;
-  --FONT-COLOR-LIGHT: #ffffff;
-
-  --FONT-COLOR-DARK-GRAY: hsl(27, 5%, 45%);
-
-  --LINE-DIVIDER-COLOR: #e7e5e4;
-
   --HEADER-BGCOLOR: #ffffff;
-
+  --CARD-BGCOLOR: #ffffff;
+  --FONT-COLOR-DARK: #000000;
+  --FONT-COLOR-DARK-GRAY: hsl(27, 5%, 45%);
+  --FONT-COLOR-LIGHT: #ffffff;
+  --LINE-DIVIDER-COLOR: #e7e5e4;
   --LINK-COLOR: #ffffff;
   --LINK-HOVER: #7471a3;
   --LINK-ACTIVE: #bd9dea;
-
   --MAX-LINES: 3;
 
   /* MAIN BGCOLOR - FOR SIDEBAR, BUTTONS */
-
   /* BOX SHADOW */
-  --HEADER-BOX-SHADOW: 2px 3px 5px #dbdbdb, -2px 3px 5px #dbdbdb;
-  --CARDS-BOX-SHADOW: 2px 3px 5px #dbdbdb, -2px 3px 5px #dbdbdb;
+  --HEADER-BOX-SHADOW: 0px 4px 7px 2px rgba(0, 0, 0, 0.07);
+  --CARDS-BOX-SHADOW: 0 3px 8px rgba(0, 0, 0, 0.09);
 
   /* IMAGE SIZES */
   --AVATAR-IMG-WIDTH-SMALL: 3rem;
@@ -80,7 +71,6 @@ html {
 .material-symbols-rounded {
   font-variation-settings: "FILL" 1;
   vertical-align: middle;
-
 }
 
 .material-symbols-rounded.nav__icon {
@@ -115,12 +105,13 @@ html {
 /* || HEADER */ /*header block*/
 
 .header {
-  /* background-color: aquamarine; */
+  background-color:var(--HEADER-BGCOLOR);
   grid-column: 2 / 4;
+  padding-bottom: .5rem;
+  box-shadow: var(--HEADER-BOX-SHADOW);
 }
 
 .header__group-search {
-  /* background-color: lightgoldenrodyellow; */
   display: flex;
   align-items: center;
   margin: 10px 50px;
@@ -128,7 +119,7 @@ html {
 }
 
 .header__search {
-  /* background-color: palevioletred; */
+
   padding: 10px;
   display: flex;
   align-items: center;
@@ -138,7 +129,6 @@ html {
 
 .header__search-bar {
   flex-grow: 1; /* make this grow to fill the remaining space */
-
   border: none;
   outline: none;
   background: none;
@@ -155,8 +145,6 @@ html {
 }
 
 .header__profile {
-  /* background-color: lavenderblush; */
-
   margin-left: min(15%, 200px);
   display: flex;
   align-items: center;
@@ -174,14 +162,12 @@ html {
 }
 
 .header__group-display {
-  /* background-color: lightgoldenrodyellow; */
   display: flex;
   align-items: center;
   margin: 10px 50px;
 }
 
 .header__display {
-  /* background-color: powderblue; */
   display: flex;
   gap: 20px;
   align-items: center;
@@ -193,7 +179,6 @@ html {
 }
 
 .header__greeting-user-group {
-  /* background-color: lightcoral; */
   display: flex;
   flex-direction: column;
 }
@@ -208,7 +193,6 @@ html {
 }
 
 .header__actions {
-  /* background-color: bisque; */
   margin-left: auto;
 
   display: flex;
@@ -223,7 +207,6 @@ html {
   color: var(--FONT-COLOR-LIGHT);
   padding: 0.625em 1em;
   min-width: 6.25em;
-
   cursor: pointer;
 }
 
@@ -239,21 +222,15 @@ html {
 
 .sidebar {
   background-color: var(--MAIN-BGCOLOR);
-
   grid-column: 1;
   grid-row: 1 / 3;
   padding: 1.5rem;
-  
 }
 
 .sidebar__title {
-  /* background-color: midnightblue; */
-
   font-size: var(--FS-LOGO-NAME-LG);
   color: var(--FONT-COLOR-LIGHT);
-
   margin-bottom: 2.5rem;
-  /* align icon to text in span */
   vertical-align: middle;
   gap: 10px;
 }
@@ -263,8 +240,6 @@ html {
 }
 
 .nav {
-  /* background-color: cadetblue; */
-
   display: flex;
   flex-direction: column;
   row-gap: 50px;
@@ -272,15 +247,11 @@ html {
 }
 
 .nav__menu {
-  /* background-color:darkseagreen; */
-
   display: grid;
   row-gap: 20px;
 }
 
 .nav__settings {
-  /* background-color: darksalmon; */
-
   display: grid;
   row-gap: 20px;
 }
@@ -299,8 +270,6 @@ html {
 }
 
 .nav__link {
-  /* background-color: indianred; */
-
   text-decoration: none;
   color: var(--LINK-COLOR);
   padding: 10px 10px;
@@ -309,8 +278,6 @@ html {
 /* || MAIN */
 
 .main {
-  /* background-color: lightblue; */
-
   grid-column: 2 / 4;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -321,13 +288,10 @@ html {
 /* - PROJECTS */
 
 .projects {
-  /* background-color: plum; */
   grid-row: 1 /4;
 }
 
 .projects__cards-group {
-  /* background-color: khaki; */
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 25px;
@@ -338,7 +302,7 @@ html {
   padding: 1rem;
   border-left: 0.5rem solid var(--ACCENT-COLOR);
   border-radius: 0.5rem;
-
+  box-shadow: var(--CARDS-BOX-SHADOW);
   display: flex;
   flex-direction: column;
   min-height: 250px;
@@ -360,43 +324,40 @@ html {
 }
 
 .projects__card-actions {
-  /* background-color: cornflowerblue; */
   margin-top: auto;
-
   padding-right: 1.5rem;
   display: flex;
   justify-content: flex-end;
   column-gap: 20px;
-
   cursor: pointer;
 }
 
 /* - ANNOUNCEMENTS */
 
 .announcements {
-  /* background-color: lightseagreen; */
-
   display: flex;
   flex-direction: column;
   height: min-content;
 }
 
 .announcements__cards-group {
-  /* background-color: papayawhip; */
-
+  background-color: var(--CARD-BGCOLOR);
   border: 0.5px solid var(--LINE-DIVIDER-COLOR);
   border-radius: 0.5rem;
   padding: 1.5rem;
   display: grid;
+  box-shadow: var(--CARDS-BOX-SHADOW);
 }
 
 .announcements__line-divider {
   border-top: 1px solid var(--LINE-DIVIDER-COLOR);
   margin: 1rem 0;
 }
+
 .announcements__card {
-  background-color: white;
+  background-color: white;  
 }
+
 .announcements__card-title {
   line-height: 1.2;
   margin: 0.5em 0;
@@ -412,7 +373,6 @@ html {
   margin-bottom: 5px;
   line-height: 1.5;
 
-
  /* Set maximum number of lines of text */
   display: -webkit-box;
   overflow: hidden;
@@ -423,22 +383,18 @@ html {
 /* - TRENDING */
 
 .trending {
-  /* background-color: olivedrab; */
-
   display: grid;
   grid-template-columns: 1fr;
 }
 
 .trending__cards-group {
-  /* background-color: cornflowerblue; */
-
+  background-color: var(--CARD-BGCOLOR);
   border-radius: 0.5rem;
   padding: 0.5rem;
+  box-shadow: var(--CARDS-BOX-SHADOW);
 }
 
 .trending__card {
-  /* background-color: honeydew; */
-
   display: flex;
   align-items: center;
   gap: 20px;
@@ -446,7 +402,6 @@ html {
   margin: 5px;
   cursor: pointer;
 }
-
 
 .trending__card-username {
   margin: 0.3rem 0;
